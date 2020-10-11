@@ -1,0 +1,34 @@
+public class Game
+{
+	public void type()
+	{
+		System.out.println("Indoor & Outdoor");
+	}
+}
+
+
+public class Cricket extends Game {
+	
+	public void type()
+	{
+		System.out.println("Outdoor game");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Game gm=new Game();
+		Cricket ck=new Cricket();
+		gm.type();
+		ck.type();
+		gm=ck;
+		gm.type();
+
+	}
+
+}
+
+Output
+Indoor & Outdoor
+Outdoor game
+Outdoor game

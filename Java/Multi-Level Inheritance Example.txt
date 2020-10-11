@@ -1,0 +1,20 @@
+class employee{
+	float salary=4000;
+}
+class sprogrammer extends employee
+{
+	int sbonus=1000;
+}
+public class programmer extends sprogrammer{
+	 int bonus=2000;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		programmer p =new programmer();
+		System.out.println(p.sbonus);
+	}
+
+}
+
+Output
+1000

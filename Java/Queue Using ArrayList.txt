@@ -1,0 +1,55 @@
+import java.util.*;
+public class Queue {
+	int front=-1;
+	int rear=-1;
+	List<Integer> queueList;
+	Queue()
+	{
+		queueList=new ArrayList<>();
+	}
+	void enqueue(int value)
+	{
+		if (front==rear)
+		{
+			front=0;
+			rear=0;
+			queueList.add(value);
+		}
+		else
+		{
+			rear++;
+			queueList.add(rear, value);
+		}
+	}
+	void dequeue()
+	{
+		if (front==-1)
+		{
+			System.out.println("Queue Underflow");
+		}
+		else
+		{
+			queueList.remove(front);
+			front++;
+		}
+	}
+	void display()
+	{
+		for (int i=0;i<queueList.size();i++)
+		{
+			System.out.printf("%d->", queueList.get(i));
+		}
+		System.out.println();
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Queue q=new Queue();
+		q.enqueue(5);
+		q.enqueue(7);
+		q.dequeue();
+		q.display();
+
+	}
+
+}

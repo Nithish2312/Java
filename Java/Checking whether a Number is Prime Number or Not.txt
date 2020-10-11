@@ -1,0 +1,35 @@
+import java.util.*;
+public class solution {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter a number\n");
+		Scanner s=new Scanner(System.in);
+		int a=s.nextInt();
+		boolean p=true;
+		for (int i=2;i<a;i++)
+		{
+			if (a%i==0)
+			{
+				if (i!=a)
+				{
+					p=false;
+					
+				}
+			
+		}
+		
+		
+      s.close();
+	}
+		if (p)
+		{
+			System.out.println("Prime Number");
+		}
+		else
+		{
+			System.out.println("Composite Number");
+		}
+
+}
+}

@@ -1,0 +1,48 @@
+
+public class animal {
+	
+	void sound()
+	{
+		System.out.println("Animal is making a sound");
+	}
+	
+}
+
+
+
+public class horse extends animal {
+	void sound()
+	{
+		System.out.println("neigh");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		horse h=new horse();
+		h.sound();
+
+	}
+
+}
+
+Output
+Neigh
+
+
+public class cat extends animal {
+	void sound()
+	{
+		System.out.println("Meow");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		cat c=new cat();
+		c.sound();
+
+	}
+
+}
+
+Output
+Meow

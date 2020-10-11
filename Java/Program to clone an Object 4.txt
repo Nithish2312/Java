@@ -1,0 +1,25 @@
+class Demo implements Cloneable
+{
+     int roll_no;
+     String name;
+     double cgpa;
+     Demo(int roll_no,String name,double cgpa)
+     {
+         this.roll_no=roll_no;
+         this.name=name;
+         this.cgpa=cgpa;
+     }
+     public Object clone()throws CloneNotSupportedException
+     {
+         return super.clone();
+     }
+}
+public class face{
+  public static void main(String args[]) throws CloneNotSupportedException
+  {
+    Demo d1=new Demo(12,"Manoj",6.8);
+    Demo d2=(Demo)d1.clone();
+    System.out.println(d1.roll_no+" "+d1.name+" "+d1.cgpa);
+    System.out.println(d2.roll_no+" "+d2.name+" "+d2.cgpa);
+  }
+}

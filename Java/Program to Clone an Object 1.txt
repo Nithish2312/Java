@@ -1,0 +1,27 @@
+class Demo
+{
+     int roll_no;
+     String name;
+     double cgpa;
+     Demo(int roll_no,String name,double cgpa)
+     {
+         this.roll_no=roll_no;
+         this.name=name;
+         this.cgpa=cgpa;
+     }
+     //override
+     protected void finalize()
+     {
+         System.out.println("This is finalize method");
+     }
+    
+}
+public class face{
+  public static void main(String args[])
+  {
+    Demo d1=new Demo(12,"Manoj",6.8);
+    System.out.println(d1.hashCode());
+    d1=null;
+    System.gc();
+  }
+}

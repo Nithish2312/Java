@@ -1,0 +1,30 @@
+[12:33 PM] FACE7
+    class Demo
+{
+     int roll_no;
+     String name;
+     double cgpa;
+     Demo(int roll_no,String name,double cgpa)
+     {
+         this.roll_no=roll_no;
+         this.name=name;
+         this.cgpa=cgpa;
+     }
+     //override
+     protected void finalize()
+     {
+         System.out.println("This is finalize method");
+     }
+    
+}
+public class face{
+  public static void main(String args[])
+  {
+    Demo d1=new Demo(12,"Manoj",6.8);
+    System.out.println(d1.hashCode());
+    d1=null;
+    System.gc();
+  }
+}
+ 
+<https://teams.microsoft.com/l/message/19:09deadd011974b5eb873c82b9f0f8dbe@thread.tacv2/1595574198373?tenantId=d4963ce2-af94-4122-95a9-644e8b01624d&amp;groupId=09fe129b-38a6-4cd8-88c8-1232dfe7d13b&amp;parentMessageId=1594467417025&amp;teamName=D1(STS3201-SJT707)&amp;channelName=FRIDAY&amp;createdTime=1595574198373>

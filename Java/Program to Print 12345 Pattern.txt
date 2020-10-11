@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.io.BufferedReader; 
+import java.io.IOException; 
+import java.io.InputStreamReader; 
+
+public class nk2 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Enter the value of n");
+		int n=scan.nextInt();
+		for (int i=1;i<=n;i++)
+		{
+			int count=i;
+			for (int j=i;j<=n;j++)
+			{
+				System.out.printf("%d ",j);
+				
+			}
+			System.out.print("\n");
+		}
+	}
+
+}

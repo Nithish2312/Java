@@ -1,0 +1,37 @@
+import java.util.*;
+public class nk1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		long b1,b2;
+		int i=0,carry=0;
+		int[] sum=new int[10]; //To store the sum
+		Scanner scanner=new Scanner(System.in);
+		System.out.print("Enter the first number");
+		b1=scanner.nextLong();
+		System.out.print("Enter the second number");
+		b2=scanner.nextLong();
+		scanner.close();
+		while (b1 != 0 || b2 != 0) 
+		{
+			sum[i++] = (int)((b1 % 10 + b2 % 10 + carry) % 2);
+			carry = (int)((b1 % 10 + b2 % 10 + carry) / 2);
+			b1 = b1 / 10;
+			b2 = b2 / 10;
+		}
+		if (carry!=0)
+		{
+			sum[i++]=carry;
+		}
+        --i;
+        System.out.print("Output: ");
+        while(i>=0)
+        {
+        	System.out.print(sum[i--]);
+        	
+        }
+        System.out.print("\n");
+        
+	}
+
+}

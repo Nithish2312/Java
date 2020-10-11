@@ -1,0 +1,23 @@
+
+import java.util.*;
+public class solution1 {
+	String name;
+	
+	public solution1()
+	{
+		System.out.println("Constructor Called");
+		name="Nithish Kumar";
+		
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		solution1 sol=new solution1();
+		System.out.println(sol.name);
+
+	}
+
+}
+
+Output
+Constructor Called
+Nithish Kumar

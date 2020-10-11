@@ -1,0 +1,52 @@
+import java.util.*;
+
+
+public class Stack {
+	List<Integer> stackList;
+	Stack()
+	{
+		stackList=new ArrayList<>();
+	}
+	void push(int value)
+	{
+		stackList.add(value);
+	}
+	int pop()
+	{
+		if (!stackList.isEmpty())
+		{
+			int pop=stackList.get(stackList.size()-1);
+			stackList.remove(stackList.size()-1);
+			return pop;
+			
+		}
+		else
+		{
+			System.out.println("The stack is already empty");
+			return -1;
+		}
+	}
+	void display()
+	{
+		for (int i=0;i<stackList.size();i++)
+		{
+			System.out.printf("%d->", stackList.get(i));
+		}
+		System.out.println();
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Stack s=new Stack();
+		s.push(5);
+		s.push(6);
+		s.display();
+		s.pop();
+		s.display();
+		
+		
+
+	}
+
+}

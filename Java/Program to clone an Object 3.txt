@@ -1,0 +1,24 @@
+class Demo extends Object
+{
+    int roll_no;
+    String name;
+    double cgpa;
+    Demo(int roll_no,String name,double cgpa)
+    {
+        this.roll_no=roll_no;
+        this.name=name;
+        this.cgpa=cgpa;
+    }
+    //override
+    public String toString()
+    {
+        return name+" "+roll_no+" "+cgpa;
+    }
+}
+public class face{
+  public static void main(String args[])
+  {
+     Demo d=new Demo(24,"Ajith",8.1);
+    System.out.println(d);
+  }
+}

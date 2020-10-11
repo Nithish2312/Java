@@ -1,0 +1,39 @@
+
+import java.util.*;
+public class solution1 {
+	String name;
+	private String rollno;
+	
+	public String getRollNo() {
+		return rollno;
+	}
+    public void setRollNo(String rollno)
+    {
+    	Scanner s=new Scanner(System.in);
+    	System.out.println("Enter the register number");
+    	String str=s.nextLine();
+    	this.rollno=str;
+    	System.out.println("this"+this);
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		solution1 sol=new solution1();
+		sol.name="Nithish";
+		sol.setRollNo("18BCE2034");
+		System.out.println("s1"+sol);
+		System.out.println(sol.name);
+		System.out.println(sol.getRollNo());
+	
+
+	}
+
+}
+
+
+Output
+Enter the register number
+18BCE2034
+thissolution1@2f4d3709
+s1solution1@2f4d3709
+Nithish
+18BCE2034

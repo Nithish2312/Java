@@ -1,0 +1,38 @@
+import java.util.*;
+import java.util.regex.Matcher;  
+import java.util.regex.Pattern;  
+
+public class One {
+   public static void main(String []args) {
+	   int[] arr1={7,1,4,2};
+	   int max1=arr1[0];
+	   int max2=0;
+	   for (int i=0;i<arr1.length;i++)
+	   {
+		   if (max1<arr1[i])
+		   {
+			   max1=arr1[i];
+		   }
+	   }
+	   for (int i=0;i<arr1.length;i++)
+	   {
+		   
+		  
+			   if (max2<arr1[i])
+			   {
+				   if (arr1[i]<max1)
+				   {
+					   max2=arr1[i];
+				   }
+				   
+			   }
+		   
+	   }
+	   System.out.println(max2);
+	   	
+	   
+	   
+   }
+
+}
+

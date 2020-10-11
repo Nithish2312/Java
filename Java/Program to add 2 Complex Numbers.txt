@@ -1,0 +1,28 @@
+import java.util.*;
+public class nk1 {
+	double real,img;
+	
+	nk1(double r, double i)
+	{
+		real=r;
+		img=i;
+	}
+	public static nk1 sum(nk1 c1, nk1 c2)
+	{
+		nk1 temp=new nk1(0,0);
+		temp.real=c1.real+c2.real;
+		temp.img=c1.img+c2.img;
+		return temp;
+		
+		
+	}
+
+	public static void main(String[] args) {
+		
+        nk1 one=new nk1(5.5,4);
+        nk1 two=new nk1(1.2,3.5);
+        nk1 temp=sum(one,two);
+        System.out.printf("Sum is: "+temp.real+" + "+temp.img+"i");
+	}
+
+}
